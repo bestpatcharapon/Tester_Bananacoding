@@ -6,7 +6,7 @@
 
 | Status              | Count |
 | :------------------ | :---- |
-| **PASSED**          | 19    |
+| **PASSED**          | 4    |
 | **FAILED**          | 1     |
 | **Unable for Test** | 0     |
 
