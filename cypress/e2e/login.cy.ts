@@ -1,15 +1,14 @@
 /// <reference types="cypress" />
 
 describe('Login Test', () => {
-
   // Visit the website before each test
   beforeEach(() => cy.visit('https://new-bananatesting.onbananacoding.com/'))
 
-  it('TC_002: Success', () => {
-    cy.get('[formcontrolname="email"]').type('patcharapon@bananacoding.com')
-    cy.get('[formcontrolname="password"]').type('Oioip0123.')
+  it('TC_002: Success Login', () => {
+    cy.get('[formcontrolname="email"]').should('be.visible').type('patcharapon@bananacoding.com')
+    cy.get('[formcontrolname="password"]').should('be.visible').type('Oioip0123.')
     cy.contains('button', 'Sign in').click()
-    cy.url().should('not.include', 'login')
+    cy.url().should('include', 'dashboard')
   })
 
   it('TC_003: Check Button 365', () => {
