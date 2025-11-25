@@ -40,7 +40,7 @@
 ![TC_002 Result](./img/TC_002.png)
 
 **สถานะ:** FAILED  
-**หมายเหตุ:** Server มีปัญหาทำให้ไม่สามารถกรอก Email/Password ถูกต้องและกดปุ่ม Sign in ได้
+**หมายเหตุ:** Login Failed (API 400 Bad Request) - Server มีปัญหา ทำให้ Sign in ไม่ผ่านแม้ข้อมูลถูกต้อง
 
 ---
 
@@ -51,7 +51,7 @@
 ![TC_003 Result](./img/TC_003.png)
 
 **สถานะ:** PASSED ✅  
-**ผลลัพธ์:** ระบบรีไดเร็กต์ไปยังหน้า Login ของ Microsoft และเข้าสู่ระบบสำเร็จ
+**ผลลัพธ์:** กดปุ่ม Sign in with Office 365 ได้
 
 ---
 
