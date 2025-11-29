@@ -1,89 +1,61 @@
-# Tester_Bananacoding
+# Automated Testing - BananaTesting
 
-## 📋 Test Execution Report
-
-### Summary
+## Test Execution Status
 
 | Status              | Count |
 | :------------------ | :---- |
-| **PASSED**          | 4    |
-| **FAILED**          | 1     |
+| **PASSED**          | 20    |
+| **FAILED**          | 0     |
 | **Unable for Test** | 0     |
 
 ---
 
-## 🖼️ Test Screenshots
+## Test Suites Overview
 
-### Login Page Interface
+### 1. User Login (TS_001)
 
-หน้าจอเข้าสู่ระบบของเว็บไซต์ แสดงองค์ประกอบต่างๆ ที่ใช้ในการทดสอบ TC_001
+**Focus:** Verify login functionality including success, failure, and UI validation.
 
-![Login Page](./img/login.png)
+![Login Test Results](img/TC_002-006.png)
 
-**องค์ประกอบที่แสดง:**
+- **TC_001**: Verify Login Page UI
+- **TC_002**: Login Success (Standard)
+- **TC_003**: Login Success (Office 365)
+- **TC_004**: Login Failed (Invalid Email)
+- **TC_005**: Login Failed (Invalid Password)
+- **TC_006**: Login Failed (Empty Fields)
 
-- โลโก้ Bt
-- Title "Hello, Welcome back!"
-- ช่องกรอก Email
-- ช่องกรอก Password
-- Checkbox "Remember me"
-- Link "Forgot password?"
-- ปุ่ม Sign in
-- ปุ่ม Sign in with Office 365
+### 2. Test Cases Tab - Modules (TS_002)
 
----
+**Focus:** Manage Test Modules (Create, Edit, Delete).
 
-### TC_002: ผู้ใช้เข้าสู่ระบบสำเร็จจากปุ่ม Sign in
+![Module Test Results](img/TC_007-010.png)
 
-ผลการทดสอบการเข้าสู่ระบบด้วย Email และ Password ที่ถูกต้อง
+- **TC_007**: Create Module Successfully
+- **TC_008**: Create Module Failed (Empty Name)
+- **TC_009**: Edit Module Name
+- **TC_010**: Delete Module
 
-![TC_002 Result](./img/TC_002.png)
+### 3. Test Scenario Management (TS_003)
 
-**สถานะ:** FAILED  
-**หมายเหตุ:** Login Failed (API 400 Bad Request) - Server มีปัญหา ทำให้ Sign in ไม่ผ่านแม้ข้อมูลถูกต้อง
+**Focus:** Manage Test Scenarios within Modules.
 
----
+![Scenario Test Results](img/TC_011-014.png)
 
-### TC_003: ผู้ใช้เข้าสู่ระบบสำเร็จจากปุ่ม Sign in with Office 365
+- **TC_011**: Create Scenario Successfully
+- **TC_012**: Create Scenario Failed (Empty Name)
+- **TC_013**: Edit Scenario Name
+- **TC_014**: Delete Scenario
 
-ผลการทดสอบการเข้าสู่ระบบผ่าน Microsoft Office 365
+### 4. Test Case Management (TS_004)
 
-![TC_003 Result](./img/TC_003.png)
+**Focus:** Manage individual Test Cases (Create, Import, Duplicate, Edit, Delete).
 
-**สถานะ:** PASSED ✅  
-**ผลลัพธ์:** กดปุ่ม Sign in with Office 365 ได้
+![Test Case Results](img/TC_015_020.png)
 
----
-
-### TC_004: ผู้ใช้เข้าสู่ระบบไม่สำเร็จ - กรอก Email ผิด
-
-ผลการทดสอบเมื่อผู้ใช้กรอก Email ที่ไม่ถูกต้อง
-
-![TC_004 Result](./img/TC_004.png)
-
-**สถานะ:** PASSED ✅  
-**ผลลัพธ์:** ระบบแสดงข้อความแจ้งเตือน "ไม่พบอีเมลในระบบ" และผู้ใช้ยังคงอยู่ที่หน้า Login
-
----
-
-### TC_005: ผู้ใช้เข้าสู่ระบบไม่สำเร็จ - กรอก Password ผิด
-
-ผลการทดสอบเมื่อผู้ใช้กรอก Password ที่ไม่ถูกต้อง
-
-![TC_005 Result](./img/TC_005.png)
-
-**สถานะ:** PASSED ✅  
-**ผลลัพธ์:** ระบบแสดงข้อความแจ้งเตือน "รหัสผ่านไม่ถูกต้อง" และผู้ใช้ยังคงอยู่ที่หน้า Login
-
----
-
-### TC_006: ผู้ใช้เข้าสู่ระบบไม่สำเร็จ - ไม่กรอกข้อมูล
-
-ผลการทดสอบเมื่อผู้ใช้ไม่กรอกข้อมูลใดๆ
-
-![TC_006 Result](./img/TC_006.png)
-
-**สถานะ:** PASSED ✅  
-**ผลลัพธ์:** ระบบแสดงข้อความแจ้งเตือนให้กรอกข้อมูล (Required Field Validation) ที่ใต้ช่อง Email และ Password
-
----
+- **TC_015**: Create Test Case Successfully
+- **TC_016**: Create Test Case Failed (Empty Fields)
+- **TC_017**: Import Test Case from File
+- **TC_018**: Duplicate Test Case
+- **TC_019**: Edit Test Case
+- **TC_020**: Delete Test Case
