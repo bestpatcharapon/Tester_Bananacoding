@@ -1,0 +1,3 @@
+Case Name,Steps,Expected Results
+"TC_Import_001","Click login button","User logged in successfully"
+"TC_Import_002","Enter invalid credentials","Show error message"

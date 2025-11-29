@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:login": "cypress run --spec 'cypress/e2e/login.cy.ts'",
+    "cy:button": "cypress run --spec 'cypress/e2e/button_Testcase.cy.ts'",
+    "cy:button-scenario": "cypress run --spec 'cypress/e2e/button_Test Scenario.cy.ts'",
+    "cy:tab": "cypress run --spec 'cypress/e2e/tab_testcases.cy.ts'"
   },
   "keywords": [],
   "author": "",
